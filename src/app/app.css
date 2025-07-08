@@ -1,0 +1,9 @@
+* {
+  --primary-color: greenyellow;
+  font-family: Ubuntu;
+  text-align: center;
+}
+
+p {
+  font-size: 2rem;
+}
