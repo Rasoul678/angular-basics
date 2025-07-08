@@ -41,12 +41,18 @@ export class HousingService {
       laundry: false,
     },
   ];
-  
+
   getAllHousingLocations = (): HousingLocationInfo[] => {
-    return this.housingLocationList
-  }
-  
+    return this.housingLocationList;
+  };
+
   getHousingLocationById = (id: number): HousingLocationInfo | undefined => {
-    return this.housingLocationList.find(location => location.id == id)
-  }
+    return this.housingLocationList.find((location) => location.id == id);
+  };
+
+  submitApplication = (firstName: string, lastName: string, email: string) => {
+    console.log(
+      `Homes application received: firstName: ${firstName}, lastName: ${lastName}, email: ${email}.`,
+    );
+};
 }
