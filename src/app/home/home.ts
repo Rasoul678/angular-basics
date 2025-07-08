@@ -12,11 +12,25 @@ import { HousingService } from "../housing.service";
 })
 export class Home {
   protected title = "home";
-  
-  housingService: HousingService = inject(HousingService)
-  housingLocationList: HousingLocationInfo[] = []
-  
-  constructor(){
-    this.housingLocationList = this.housingService.getAllHousingLocations()
+
+  housingService: HousingService = inject(HousingService);
+  housingLocationList: HousingLocationInfo[] = [];
+  filteredLocationList: HousingLocationInfo[] = [];
+
+  constructor() {
+    this.housingLocationList = this.housingService.getAllHousingLocations();
+    this.filteredLocationList = this.housingLocationList;
   }
+
+  filterResults = (text: string) => {
+    if (!text) {
+      this.filteredLocationList = this.housingLocationList;
+      return;
+    }
+    
+    this.filteredLocationList = this.housingLocationList.filter(
+      (housingLocation) =>
+        housingLocation?.city.toLowerCase().includes(text.toLowerCase()),
+    );
+  };
 }
