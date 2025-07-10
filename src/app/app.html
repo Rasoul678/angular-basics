@@ -15,7 +15,10 @@
       </header>
     </a>
   </nav>
-  <h1>HELLO ANGULAR</h1>
+  <h1>@if(isLoggedIn){HELLO ANGULAR}</h1>
+  @for (user of users; track user.id ){
+  <h1>{{user.name}}</h1>
+  }
   <router-outlet />
 </main>
 

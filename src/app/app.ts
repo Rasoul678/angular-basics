@@ -9,4 +9,10 @@ import { RouterOutlet, RouterModule } from "@angular/router";
 })
 export class App {
   protected title = "myapp";
+  isLoggedIn = true;
+
+  users = [
+    { id: "1", name: "Rasoul" },
+    { id: "2", name: "Sarah" },
+  ];
 }

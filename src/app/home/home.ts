@@ -37,4 +37,12 @@ export class Home {
         housingLocation?.city.toLowerCase().includes(text.toLowerCase()),
     );
   };
+
+  onMouseOver = () => {
+    console.log("Mouse Over Event!");
+  };
+
+  addItem = (event: string) => {
+    console.log(event);
+  };
 }
