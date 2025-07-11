@@ -1,6 +1,7 @@
 import { Routes } from "@angular/router";
 import { Home } from "./home/home";
 import { Details } from "./details/details";
+import { Image } from "./image/image";
 
 export const routes: Routes = [
   {
@@ -13,4 +14,9 @@ export const routes: Routes = [
     component: Details,
     title: "Details page",
   },
+  {
+    path: "image",
+    component: Image,
+    title: "Ng Optimised Image"
+  }
 ];
