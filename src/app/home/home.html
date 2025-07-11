@@ -9,9 +9,15 @@
       Search
     </button>
   </form>
+  @defer(on viewport){
   <app-housing-location
     *ngFor="let housingLocation of filteredLocationList"
     [housingLocation]="housingLocation"
     (addItemEvent)="addItem($event)"
   ></app-housing-location>
+  } @loading(after 1s){
+  <h1>Loading...</h1>
+  } @placeholder(minimum 2s){
+  <h1>Housing Location</h1>
+  }
 </section>
