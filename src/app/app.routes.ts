@@ -2,6 +2,7 @@ import { Routes } from "@angular/router";
 import { Home } from "./home/home";
 import { Details } from "./details/details";
 import { Image } from "./image/image";
+import { TemplateForm } from "./template-form/template-form";
 
 export const routes: Routes = [
   {
@@ -17,6 +18,11 @@ export const routes: Routes = [
   {
     path: "image",
     component: Image,
-    title: "Ng Optimised Image"
-  }
+    title: "Ng Optimised Image",
+  },
+  {
+    path: "template-form",
+    component: TemplateForm,
+    title: "Template Driven Form",
+  },
 ];

@@ -19,6 +19,11 @@
         <h1>Image</h1>
       </header>
     </a>
+    <a [routerLink]="['/template-form']">
+      <header class="brand-name">
+        <h1>Template Form</h1>
+      </header>
+    </a>
   </nav>
   <h1>@if(isLoggedIn){HELLO ANGULAR}</h1>
   @for (user of users; track user.id ){
