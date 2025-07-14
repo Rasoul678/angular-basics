@@ -4,6 +4,7 @@ import { Details } from "./details/details";
 import { Image } from "./image/image";
 import { TemplateForm } from "./template-form/template-form";
 import { ReactiveForms } from "./reactive-forms/reactive-forms";
+import { Cars } from "./cars/cars";
 
 export const routes: Routes = [
   {
@@ -30,5 +31,10 @@ export const routes: Routes = [
     path: "reactive-form",
     component: ReactiveForms,
     title: "Reactive Form",
+  },
+  {
+    path: "cars",
+    component: Cars,
+    title: "Cars",
   },
 ];
