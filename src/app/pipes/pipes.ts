@@ -5,10 +5,11 @@ import {
   UpperCasePipe,
 } from "@angular/common";
 import { Component } from "@angular/core";
+import { StarPipe } from "../star-pipe";
 
 @Component({
   selector: "app-pipes",
-  imports: [UpperCasePipe, DatePipe, DecimalPipe, CurrencyPipe],
+  imports: [UpperCasePipe, DatePipe, DecimalPipe, CurrencyPipe, StarPipe],
   templateUrl: "./pipes.html",
   styleUrl: "./pipes.css",
 })
@@ -19,4 +20,5 @@ export class Pipes {
   birthday = new Date();
   number = 3.1415;
   cost = 4560.34;
+  myName = "Rasoul Hesamirostami";
 }
