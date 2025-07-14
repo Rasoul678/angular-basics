@@ -5,6 +5,7 @@ import { Image } from "./image/image";
 import { TemplateForm } from "./template-form/template-form";
 import { ReactiveForms } from "./reactive-forms/reactive-forms";
 import { Cars } from "./cars/cars";
+import { Pipes } from "./pipes/pipes";
 
 export const routes: Routes = [
   {
@@ -36,5 +37,10 @@ export const routes: Routes = [
     path: "cars",
     component: Cars,
     title: "Cars",
+  },
+  {
+    path: "pipes",
+    component: Pipes,
+    title: "Pipes",
   },
 ];
